@@ -1,3 +1,14 @@
+@keyframes rainbowText {
+  0%   { color: rgb(255, 210, 210); }
+  14%  { color: rgb(189, 162, 111); }
+  28%  { color: rgb(195, 195, 77); }
+  42%  { color: rgb(132, 213, 132); }
+  57%  { color: rgb(83, 130, 210); }
+  71%  { color: rgb(155, 96, 197); }
+  85%  { color: rgb(212, 130, 212); }
+  100% { color: rgb(255, 187, 187); }
+}
+
 body {
     margin: 0;
     /* feel free to change/customize this gradient and font */
@@ -28,15 +39,28 @@ body {
     padding: 20px;
 
     /* background color for tile, feel free to change */
-    background-color: rgb(35, 33, 69);
+    background-color: rgb(22, 21, 46);
     border-radius: 1vw;
     color: white;
+    border: 0px solid white;
+    transition: all 0.2s;
+}
+
+.flex-tile:hover {
+    background-color: rgb(40, 38, 78);
+    border: 1px solid white;
+    transition: all 0.2s;
 }
 
 .thumbnails {
     width: 70%;
     margin: 5% 0;
     border-radius: 0.5vw;
+}
+
+.titles {
+    color: white;
+    animation: rainbowText 10s infinite;
 }
 
 .descriptions {
