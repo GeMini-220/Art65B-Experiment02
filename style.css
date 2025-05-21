@@ -8,11 +8,13 @@ body {
 
 .flex-container {
     /* Make this into a flexbox using display: flex */
+    display: flex;
     /* Use flexbox properties to stack your tiles vertically and center them */
 }
 
 .flex-tile {
     /* Make this into a flexbox using display: flex */
+    display: flex;
     /* Use flexbox properties to stack elements in your tiles vertically and center them */
 
     /* setting the width for each tile */
