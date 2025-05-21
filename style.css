@@ -1,22 +1,25 @@
 body {
     margin: 0;
     /* feel free to change/customize this gradient and font */
-    background: linear-gradient(135deg, #ffafbd 0%, #ffc3a0 100%);
+    background: linear-gradient(135deg, #afefff 0%, #ffc3a0 100%);
     /* feel free to change/customize font */
-    font-family: 'Arial', sans-serif;
+    font-family: 'Times New Roman', Times, serif
 }
 
 .flex-container {
     /* Make this into a flexbox using display: flex */
     display: flex;
     /* Use flexbox properties to stack your tiles vertically and center them */
+    flex-direction: column;
+    align-items: center;
 }
 
 .flex-tile {
     /* Make this into a flexbox using display: flex */
     display: flex;
     /* Use flexbox properties to stack elements in your tiles vertically and center them */
-
+    flex-direction: column;
+    align-items: center;
     /* setting the width for each tile */
     width: 40%;
 
@@ -25,8 +28,42 @@ body {
     padding: 20px;
 
     /* background color for tile, feel free to change */
-    background-color: white;
+    background-color: rgb(35, 33, 69);
+    border-radius: 1vw;
+    color: white;
 }
 
+.thumbnails {
+    width: 70%;
+    margin: 5% 0;
+    border-radius: 0.5vw;
+}
 
+.descriptions {
+    width: 80%;
+    margin: 0;
+}
 
+.moreinfo {
+    margin: 30% auto;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120%;
+    padding: 15%;
+    transition: all 0.5s;
+    color: white;
+    background: linear-gradient(135deg, #258096 0%, #692966 100%);
+}
+
+.moreinfo:hover {
+    background: rgb(174, 68, 156);
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.moreinfo:active {
+    background: rgb(104, 37, 93);
+    transform: scale(0.95) translate(0, 6px);
+    transition: all 0.02s;
+}
